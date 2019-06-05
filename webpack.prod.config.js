@@ -5,15 +5,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
     mode: 'production',
     entry: path.join(__dirname, '/src/index.js'),
-    output: {
-        filename: 'build.js',
-        path: path.join(__dirname, '/dist')
+    output: {        
+        path: path.join(__dirname, '/dist'),
+        publicPath: '/',
+        filename: 'bundle.js'
     },
     module: {
         rules: [
             {
-                exclude: /node_modules/,
                 test: /\.js$/,
+                exclude: /node_modules/,                
                 loader: 'babel-loader'
             },
             {
