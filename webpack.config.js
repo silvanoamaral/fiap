@@ -1,4 +1,5 @@
 const devConfig = require('./webpack.dev.config.js');
+const prodConfig = require('./webpack.prod.config.js');
 
 let config;
 
@@ -7,7 +8,7 @@ switch (process.env.npm_lifecycle_event) {
     config = devConfig;
     break;
   case 'build':
-    config = devConfig;
+    config = prodConfig;
     break;
   default:
     config = devConfig;
