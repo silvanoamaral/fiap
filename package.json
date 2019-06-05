@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "PORT=8000 webpack-dev-server --mode development --open --hot",
     "start": "PORT=8000 webpack-dev-server --inline --hot",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
