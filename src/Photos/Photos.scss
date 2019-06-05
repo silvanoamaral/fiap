@@ -1,0 +1,24 @@
+.photos {
+    &__title {
+        color: #91a3ad;
+        font: 45px "Gotham-Medium";
+        margin: 0 0 60px;
+        padding-bottom: 45px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:after {
+            background-color: #ed145b;
+            bottom: 0;
+            content: '';
+            display: block;
+            height: 3px;
+            left: 50%;
+            position: absolute;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: 30px;
+        }
+    }
+}

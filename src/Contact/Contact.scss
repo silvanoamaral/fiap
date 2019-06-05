@@ -1,0 +1,176 @@
+.contact {
+    padding-top: 150px;
+
+    h1 {
+        &.title_main {
+            margin-bottom: 160px;
+
+            &:after {
+                background: #ed145b;
+                content: '';
+                position: absolute;
+                width: 55px;
+                height: 1px;
+                bottom: -40px;
+                left: 135px;
+            }
+        }
+    }
+
+    .col {
+        float: left;
+        width: 50%;
+
+        .field {
+            label {
+                color: #424a4f;
+                display: block;
+                font-size: 12px;
+                line-height: 33px;                
+                font-family: "Gotham HT F";
+                font-weight: 500;
+                text-transform: uppercase;
+                text-indent: 12px;
+            }
+
+            textarea {
+                background-color: #1a1b1c;
+                border: 1px solid #363c40;
+                padding: 10px 0px 10px 10px;
+                color: #fff;
+                text-transform: uppercase;
+                width: 90%;
+            }
+
+            input {
+                &[type=text],
+                &[type=email],
+                &[type=number] {
+                    background-color: #1a1b1c;
+                    border: 1px solid #363c40;
+                    padding: 10px 0px 10px 10px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    width: 90%;
+                }  
+            }
+
+            &__radio {
+                padding: 0px;
+
+                li {
+                    float: left;
+                    margin-right: 46px;
+
+                    label {
+                        cursor: pointer;
+                        text-indent: 25px;
+                        position: relative;
+
+                        input[type=radio] {
+                            display: none;
+
+                            + span {
+                                background-color: transparent;
+                                transition: background-color 0.5s ease;
+                                border: 1px solid #363c40;
+                                content: '';
+                                width: 10px;
+                                height: 10px;
+                                position: absolute;
+                                left: 0;
+                                top: 10px;
+                            }
+                            &:checked {
+                                + span {
+                                    background-color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__city {
+                width: 76%;
+                display: inline-block;
+            }
+
+            &__state {
+                width: 20%;
+                display: inline-block;
+                position: relative;
+
+                select {
+                    background: transparent;
+                    border: 1px solid #363c40;
+                    color: #fff;
+                    height: 37px;
+                    padding: 0 40px 0 12px;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    position: relative;
+
+                    option {
+                        background: #363c40;
+                    }                    
+                }
+
+                &:after {
+                    content: '>';
+                    position: absolute;
+                    transform: rotate(90deg);
+                    right: 37px;
+                    top: 9px;
+                    z-index: -1;
+                }
+            }            
+        }
+
+        .fone {
+            &__ddd {
+                width: 20%;
+                display: inline-block;
+
+                input[type=number] {
+                    width: 60%
+                }
+            }
+
+            &__number {
+                width: 76%;
+                display: inline-block;
+            }
+        }
+
+        .btn {
+            display: block;
+            text-align: right;
+            margin-top: 20px;     
+            margin-right: 40px;
+
+            button {
+                background-color: #ed145b;
+                border: 1px solid #ed145b;
+                color: #000;
+                cursor: pointer;
+                font: 11px/11px Gotham HTF Medium;
+                letter-spacing: 2px;
+                padding: 13px 27px;
+                text-transform: uppercase;
+                transition: background .4s ease,color .4s ease;
+                white-space: nowrap;
+
+                &:hover {
+                    background: #000;
+                    color: #ed145b;
+                }                
+            }
+
+            &__clear {
+                margin-right: 20px;
+            }
+        }
+    }
+}

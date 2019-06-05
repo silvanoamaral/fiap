@@ -1,0 +1,134 @@
+.news {   
+
+    h1 {
+        &.title_main {
+            margin-bottom: 160px;
+        }
+    }
+
+    &__list {
+
+        &:hover {
+            .news__list-img {
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+            }
+        }
+
+        li {
+            font: 16px/26px Roboto;
+            display: inline-block;
+            padding: 0 14px;
+            vertical-align: top;
+            width: 30.33%;
+            margin-bottom: 30px;
+
+            .news__list-img {
+                max-width: 350px;
+                position: relative;
+                margin-bottom: 10px;
+
+                img {
+                    width: 100%;
+                    -webkit-transition: all .5s ease;
+                    transition: all .5s ease;
+                    opacity: 1;
+                }
+            }
+
+            &:hover {
+                .news__list-img {
+                    -webkit-filter: none;
+                    filter: none
+                }
+            }
+
+            
+
+            h2 {
+                font-size: 18px;
+                letter-spacing: 1px;
+                line-height: 30px;
+                color: #91a3ad;
+                font-family: "Gotham-Medium";
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+
+            strong {
+                display: block;
+                font-size: 14px;
+                letter-spacing: 1px;
+                line-height: 20px;
+                color: #c9e2f0;
+                font-family: "Gotham-Medium";
+                font-weight: 500;
+                text-transform: uppercase;
+                padding: 25px 0;
+                position: relative;
+                margin-bottom: 25px;
+
+                &:after {
+                    background-color: #ed145b;
+                    content: '';
+                    width: 70px;
+                    height: 4px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+
+            p {
+                width: 354px;
+                font-size: 13px;
+                letter-spacing: 1px;
+                line-height: 23px;
+                color: #91a3ad;
+                font-family: "Roboto";
+                font-weight: 400;
+                margin-bottom: 20px;
+            }
+
+            .btn__leia-mais {
+                color: #ed145b;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 14px;
+                letter-spacing: 2px;
+                font-family: "Gotham-Medium";
+                font-weight: 500;
+                line-height: 33px;
+                text-transform: uppercase;
+                padding: 3px 0px 20px 50px;
+                overflow: hidden;
+                position: relative;                
+
+                span {
+                    font-family: 'Gotham-bold';
+                    border: 1px solid #f00659;
+                    -webkit-border-radius: 19px;
+                    -moz-border-radius: 19px;
+                    border-radius: 19px;
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 36px;
+                    height: 36px;
+                    text-align: center;
+                    line-height: 36px;
+                    display: inline-block;
+
+                    .icon__plus {
+                        fill: #f00659;
+                        height: 22px;
+                        width: 22px;
+                        position: relative;
+                        top: 5px;                
+                    }
+                }
+            }
+        }
+    }
+}

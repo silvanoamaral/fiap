@@ -1,0 +1,112 @@
+.footer {
+    color: #91a3ad;
+    font-family: 'Gotham-Light';
+    line-height: 18px;
+    clear: both;
+    padding: 160px 0 60px 0;
+
+    li {
+        margin: 10px 0;
+
+        a {
+            color: #91a3ad;
+            display: block;
+            -webkit-transition: color .4s;
+            transition: color .4s;
+    
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    &__logo {
+        margin-bottom: 40px;
+
+        &-icon {
+            fill: #ed145b;
+            height: 28px;
+            stroke: #ed145b;
+            -webkit-transition: fill .4s,stroke .4s;
+            transition: fill .4s,stroke .4s;
+            width: 100px;
+        }        
+    }
+
+    &__columns {
+        border: 1px solid #353b3f;
+        padding: 60px;
+    }
+
+    &__column {
+        display: inline-block;
+        font-size: 12px;
+        vertical-align: top;
+        width: 25%;
+
+        &:not(:first-child) {
+            padding-left: 45px;
+            width: 20%;
+        }
+    }
+
+
+    &__title {
+        color: #ed145b;
+        display: block;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    &__section {
+        &:not(:first-child) {
+            margin-top: 40px;
+        }
+    }
+
+    &__social {
+        font-size: 0;
+        margin-left: -5px;
+
+        li {
+            display: inline-block;
+            margin: 0 5px;
+
+            span {
+                border: 2px solid #91a3ad;
+                border-radius: 50%;
+                cursor: pointer;
+                display: inline-block;
+                fill: #91a3ad;
+                height: 35px;
+                line-height: 36px;
+                text-align: center;
+                -webkit-transition: border-color .4s,fill .4s;
+                transition: border-color .4s,fill .4s;
+                width: 35px;
+
+                svg {
+                    display: inline-block;
+                    height: 25px;
+                    margin-top: -2px;
+                    vertical-align: middle;
+                    width: 25px;
+                }
+
+                &:hover {
+                    border-color: #fff;
+                    fill: #fff;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 40px;
+
+        strong {
+            display: block;
+            margin-top: 40px;
+        }
+    }
+}

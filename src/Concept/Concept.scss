@@ -1,0 +1,77 @@
+.concept {
+    text-align: center;
+    margin-bottom: 120px;
+
+    h3 {
+        font-weight: 200;
+        letter-spacing: 2px;
+        color: #cee7f5;
+        font: 51px/61px "Gotham-Light";
+        text-align: center;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 35px;
+
+        strong {
+            font-weight: 600
+        }
+    }
+
+    p {
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        color: #9dabb2;
+        font-family: "Gotham-Light";
+        text-align: center;
+        max-width: 70%;
+        margin: 0 auto 60px;
+    }
+
+    .cta__join-us {
+        svg {
+            max-width: 222px;
+            margin: 70px 0 75px;
+        }
+    }
+
+    .scroll__circle {
+        display: block;
+        cursor: pointer;
+
+        &-text {
+            font-family: "Gotham-Medium";
+            font-size: 11px;
+            letter-spacing: 1.5px;
+            color: #91a3ad;
+            margin-top: 80px;
+            text-transform: uppercase;
+            -webkit-transition: all .4s ease-out;
+            transition: all .4s ease-out;
+        }
+
+        &-icon {
+            background-color: #616d72;
+            display: block;
+            height: 80px;
+            margin: 10px auto;
+            width: 1px;
+            position: relative;
+
+            &:before {
+                background-color: transparent;
+                border: 1px solid #616d72;
+                border-radius: 50%;
+                content: '';
+                display: block;
+                left: 50%;
+                height: 24px;
+                position: absolute;
+                bottom: -10px;
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                width: 24px;
+            }
+        }
+    }
+}
