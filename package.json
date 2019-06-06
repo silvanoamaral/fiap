@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "nuka-carousel": "^4.5.8",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^5.0.0",
