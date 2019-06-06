@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
 
-@import 'themeColors';
+@import 'variables';
+
 $theme-font: 'Roboto', verdana, sans-serif;
 
 @font-face {
@@ -32,8 +33,8 @@ a {
 
 body {
     font-family: $theme-font;
-    background-color: #000;
-    color: #91a3ad;
+    background-color: $themaColor-Black;
+    color: $themaColor-Grey;
 }
 
 #root {
@@ -51,7 +52,7 @@ body {
 
     h1 {
         &.title_main {
-            color: #91a3ad;
+            color: $themaColor-Grey;
             font: 63px/50px Gotham-Medium;
             margin-bottom: 0;
             margin-top: 0;
@@ -60,7 +61,7 @@ body {
             text-transform: uppercase;
 
             &:before {
-                background-color: #ed145b;
+                background-color: $themaColor-Magenta;
                 content: '';
                 display: block;
                 height: 13px;

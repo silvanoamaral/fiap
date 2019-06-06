@@ -1,3 +1,5 @@
+@import './src/styles/variables';
+
 .news {   
     background: url('/public/images/news-bg.png') top no-repeat;
     background-position: top;
@@ -61,7 +63,7 @@
                 font-size: 18px;
                 letter-spacing: 1px;
                 line-height: 30px;
-                color: #91a3ad;
+                color: $themaColor-Grey;
                 font-family: "Gotham-Medium";
                 font-weight: 500;
                 text-transform: uppercase;
@@ -77,7 +79,7 @@
                 font-size: 14px;
                 letter-spacing: 1px;
                 line-height: 20px;
-                color: #c9e2f0;
+                color: $color-white;
                 font-family: "Gotham-Medium";
                 font-weight: 500;
                 text-transform: uppercase;
@@ -91,7 +93,7 @@
                 }
 
                 &:after {
-                    background-color: #ed145b;
+                    background-color: $themaColor-Magenta;
                     content: '';
                     width: 70px;
                     height: 4px;
@@ -105,14 +107,14 @@
                 font-size: 13px;
                 letter-spacing: 1px;
                 line-height: 23px;
-                color: #91a3ad;
+                color: $themaColor-Grey;
                 font-family: "Roboto";
                 font-weight: 400;
                 margin-bottom: 20px;
             }
 
             .btn__leia-mais {
-                color: #ed145b;
+                color: $themaColor-Magenta;
                 cursor: pointer;
                 display: inline-block;
                 font-size: 14px;
@@ -127,7 +129,7 @@
 
                 span {
                     font-family: 'Gotham-bold';
-                    border: 1px solid #f00659;
+                    border: 1px solid $themaColor-Magenta;
                     -webkit-border-radius: 19px;
                     -moz-border-radius: 19px;
                     border-radius: 19px;
@@ -142,7 +144,7 @@
                     display: inline-block;
 
                     .icon__plus {
-                        fill: #f00659;
+                        fill: $themaColor-Magenta;
                         height: 22px;
                         width: 22px;
                         position: relative;

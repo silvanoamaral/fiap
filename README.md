@@ -6,6 +6,7 @@
 * HTML
 * CSS / SASS / BEM
 * Javascript / ES6
+* Node.js
 * Webpack
 
 ## Project Structure

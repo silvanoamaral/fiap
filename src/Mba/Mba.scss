@@ -1,3 +1,5 @@
+@import './src/styles/variables';
+
 .mba {
     background: url('/public/images/mba-bg.png') top no-repeat;
     background-position: top;
@@ -16,7 +18,7 @@
         font-size: 18px;
         letter-spacing: 1px;
         line-height: 30px;
-        color: #9dabb2;
+        color: $themaColor-Grey;
         font-family: "Gotham-Light";
         text-align: center;
         max-width: 45%;
@@ -29,7 +31,7 @@
     }
 
     &__title {
-        color: #91a3ad;
+        color: $themaColor-Grey;
         display: inline-block;
         font-family: "Gotham-Medium";
         font-size: 190px;
@@ -57,7 +59,7 @@
     }
 
     .title_fiap {
-        color: #ed145b;
+        color: $themaColor-Magenta;
         font-size: 41px;
         font-family: "Gotham-Medium";
         position: relative;
@@ -65,7 +67,7 @@
         letter-spacing: 10px;
 
         &:before {
-            background: #ed145b;
+            background: $themaColor-Magenta;
             content: '';
             display: inline-block;
             width: 150px;

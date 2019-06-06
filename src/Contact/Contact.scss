@@ -1,3 +1,5 @@
+@import './src/styles/variables';
+
 .contact {
     background: url('/public/images/contact-bg.png');
     background-position: top;
@@ -15,7 +17,7 @@
             margin-bottom: 160px;
 
             &:after {
-                background: #ed145b;
+                background: $themaColor-Magenta;
                 content: '';
                 position: absolute;
                 width: 55px;
@@ -36,8 +38,7 @@
 
         @media (max-width: 1024px) {
             width: 100%;
-        }
-    
+        }    
 
         .field {
 
@@ -46,7 +47,7 @@
             }
 
             label {
-                color: #424a4f;
+                color: $color-Gray;
                 display: block;
                 font-size: 12px;
                 line-height: 33px;                
@@ -59,9 +60,9 @@
 
             textarea {
                 background-color: transparent;
-                border: 1px solid #363c40;
+                border: 1px solid $color-Dark-Blue;
                 padding: 10px 0px 10px 10px;
-                color: #fff;
+                color: $color-white;
                 text-transform: uppercase;
                 width: 90%;
                 outline:none;
@@ -72,9 +73,9 @@
                 &[type=email],
                 &[type=number] {
                     background-color: transparent;
-                    border: 1px solid #363c40;
+                    border: 1px solid $color-Dark-Blue;
                     padding: 10px 0px 10px 10px;
-                    color: #fff;
+                    color: $color-white;
                     text-transform: uppercase;
                     width: 90%;
                     outline:none;
@@ -101,7 +102,7 @@
                             + span {
                                 background-color: transparent;
                                 transition: background-color 0.5s ease;
-                                border: 1px solid #363c40;
+                                border: 1px solid $color-Dark-Blue;
                                 content: '';
                                 width: 10px;
                                 height: 10px;
@@ -111,7 +112,7 @@
                             }
                             &:checked {
                                 + span {
-                                    background-color: #fff;
+                                    background-color: $color-white;
                                 }
                             }
                         }
@@ -131,8 +132,8 @@
 
                 select {
                     background: transparent;
-                    border: 1px solid #363c40;
-                    color: #fff;
+                    border: 1px solid $color-Dark-Blue;
+                    color: $color-white;
                     height: 37px;
                     padding: 0 40px 0 12px;
                     -webkit-appearance: none;
@@ -141,12 +142,12 @@
                     position: relative;
 
                     option {
-                        background: #363c40;
+                        background: $color-Dark-Blue;
                     }                    
                 }
 
                 &:after {
-                    color: #ed145b;
+                    color: $themaColor-Magenta;
                     content: '>';
                     position: absolute;
                     transform: rotate(90deg);
@@ -180,8 +181,8 @@
             margin-right: 40px;
 
             button {
-                background-color: #ed145b;
-                border: 1px solid #ed145b;
+                background-color: $themaColor-Magenta;
+                border: 1px solid $themaColor-Magenta;
                 color: #000;
                 cursor: pointer;
                 font-family: 'Gotham-Medium';
@@ -194,7 +195,7 @@
 
                 &:hover {
                     background: transparent;
-                    color: #ed145b;
+                    color: $themaColor-Magenta;
                 }                
             }
 

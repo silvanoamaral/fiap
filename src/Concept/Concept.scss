@@ -1,3 +1,5 @@
+@import './src/styles/variables';
+
 .concept {
     background: url('/public/images/concept-bg.png') top no-repeat;
     background-position: top;
@@ -11,7 +13,7 @@
     h3 {
         font-weight: 200;
         letter-spacing: 2px;
-        color: #cee7f5;
+        color: $themaColor-Grey;
         font: 51px/61px "Gotham-Light";
         text-align: center;
         max-width: 80%;
@@ -32,7 +34,7 @@
         font-size: 18px;
         letter-spacing: 1px;
         line-height: 30px;
-        color: #9dabb2;
+        color: $themaColor-Grey;
         font-family: "Gotham-Light";
         text-align: center;
         max-width: 70%;
@@ -59,7 +61,7 @@
             font-family: "Gotham-Medium";
             font-size: 11px;
             letter-spacing: 1.5px;
-            color: #91a3ad;
+            color: $themaColor-Grey;
             margin-top: 80px;
             text-transform: uppercase;
             -webkit-transition: all .4s ease-out;
@@ -67,7 +69,7 @@
         }
 
         &-icon {
-            background-color: #616d72;
+            background-color: $color-Light-Gray;
             display: block;
             height: 80px;
             margin: 10px auto;
@@ -76,7 +78,7 @@
 
             &:before {
                 background-color: transparent;
-                border: 1px solid #616d72;
+                border: 1px solid $color-Light-Gray;
                 border-radius: 50%;
                 content: '';
                 display: block;

@@ -1,5 +1,4 @@
-
-$cor-magenta: #ed145b;
+@import './src/styles/variables';
 
 header {
     display: flex;
@@ -50,7 +49,7 @@ header {
         width: 70%;
 
         &__list {
-            color: #616d72;
+            color: $color-Light-Gray;
             cursor: pointer;
             display: -webkit-box;
             display: -ms-flexbox;
@@ -70,7 +69,7 @@ header {
                 position: relative;
 
                 a {
-                    color: #616d72;
+                    color: $color-Light-Gray;
                     cursor: pointer;
                     display: -webkit-box;
                     display: -ms-flexbox;
@@ -85,7 +84,7 @@ header {
                     position: relative;
 
                     &:hover {
-                        color: $cor-magenta;
+                        color: $themaColor-Magenta;
 
                         &:after {
                             width: 40px;
@@ -93,7 +92,7 @@ header {
                     }
 
                     &:after {
-                        background: $cor-magenta;
+                        background: $themaColor-Magenta;
                         content: '';
                         display: block;
                         height: 2px;
@@ -127,9 +126,9 @@ header {
             width: 15%;
 
             span {
-                background-color: $cor-magenta;
-                border: 1px solid $cor-magenta;
-                color: #000;
+                background-color: $themaColor-Magenta;
+                border: 1px solid $themaColor-Magenta;
+                color: $themaColor-Black;
                 cursor: pointer;
                 font: 11px "Gotham-Medium";
                 letter-spacing: 2px;
@@ -142,8 +141,8 @@ header {
                 text-align: center;
 
                 &:hover {
-                    background: #000;            
-                    color: $cor-magenta;
+                    background: $themaColor-Black;            
+                    color: $themaColor-Magenta;
                 }
             }
 

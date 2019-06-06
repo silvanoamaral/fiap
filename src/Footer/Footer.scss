@@ -1,5 +1,7 @@
+@import './src/styles/variables';
+
 .footer {
-    color: #91a3ad;
+    color: $themaColor-Grey;
     font-family: 'Gotham-Light';
     line-height: 18px;
     clear: both;
@@ -9,13 +11,13 @@
         margin: 10px 0;
 
         a {
-            color: #91a3ad;
+            color: $themaColor-Grey;
             display: block;
             -webkit-transition: color .4s;
             transition: color .4s;
     
             &:hover {
-                color: #fff;
+                color: $color-white;
             }
         }
     }
@@ -24,9 +26,9 @@
         margin-bottom: 40px;
 
         &-icon {
-            fill: #ed145b;
+            fill: $themaColor-Magenta;
             height: 28px;
-            stroke: #ed145b;
+            stroke: $themaColor-Magenta;
             -webkit-transition: fill .4s,stroke .4s;
             transition: fill .4s,stroke .4s;
             width: 100px;
@@ -34,7 +36,7 @@
     }
 
     &__columns {
-        border: 1px solid #353b3f;
+        border: 1px solid $color-Gray;
         padding: 60px;
     }
 
@@ -60,7 +62,7 @@
 
 
     &__title {
-        color: #ed145b;
+        color: $themaColor-Magenta;
         display: block;
         margin-bottom: 20px;
         text-transform: uppercase;
@@ -81,11 +83,11 @@
             margin: 0 5px;
 
             span {
-                border: 2px solid #91a3ad;
+                border: 2px solid $themaColor-Grey;
                 border-radius: 50%;
                 cursor: pointer;
                 display: inline-block;
-                fill: #91a3ad;
+                fill: $themaColor-Grey;
                 height: 35px;
                 line-height: 36px;
                 text-align: center;
@@ -102,8 +104,8 @@
                 }
 
                 &:hover {
-                    border-color: #fff;
-                    fill: #fff;
+                    border-color: $color-white;
+                    fill: $color-white;
                 }
             }
         }

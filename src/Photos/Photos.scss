@@ -1,6 +1,8 @@
+@import './src/styles/variables';
+
 .photos {
     &__title {
-        color: #91a3ad;
+        color: $themaColor-Grey;
         font: 45px "Gotham-Medium";
         margin: 0 0 60px;
         padding-bottom: 45px;
@@ -9,7 +11,7 @@
         text-transform: uppercase;
 
         &:after {
-            background-color: #ed145b;
+            background-color: $themaColor-Magenta;
             bottom: 0;
             content: '';
             display: block;
