@@ -47,6 +47,14 @@
         &:not(:first-child) {
             padding-left: 45px;
             width: 20%;
+
+            @media (max-width: 1024px) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            width: 100%;
         }
     }
 
@@ -108,5 +116,9 @@
             display: block;
             margin-top: 40px;
         }
+    }
+
+    @media (max-width: 1024px) {
+        text-align: center;
     }
 }

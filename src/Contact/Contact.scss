@@ -1,5 +1,14 @@
 .contact {
-    padding-top: 150px;
+    background: url('/public/images/contact-bg.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 140px;
+    overflow: hidden;
+
+    @media (max-width: 1024px) {
+        padding: 20px;
+    }
 
     h1 {
         &.title_main {
@@ -14,6 +23,10 @@
                 bottom: -40px;
                 left: 135px;
             }
+
+            @media (max-width: 1024px) {
+                margin-bottom: 100px;
+            }
         }
     }
 
@@ -21,42 +34,57 @@
         float: left;
         width: 50%;
 
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+    
+
         .field {
+
+            &:not(:first-child) {
+                margin-top: 30px;
+            }
+
             label {
                 color: #424a4f;
                 display: block;
                 font-size: 12px;
                 line-height: 33px;                
-                font-family: "Gotham HT F";
+                font-family: 'Gotham-Medium';
                 font-weight: 500;
                 text-transform: uppercase;
                 text-indent: 12px;
+                letter-spacing: 1.5px;
             }
 
             textarea {
-                background-color: #1a1b1c;
+                background-color: transparent;
                 border: 1px solid #363c40;
                 padding: 10px 0px 10px 10px;
                 color: #fff;
                 text-transform: uppercase;
                 width: 90%;
+                outline:none;
             }
 
             input {
                 &[type=text],
                 &[type=email],
                 &[type=number] {
-                    background-color: #1a1b1c;
+                    background-color: transparent;
                     border: 1px solid #363c40;
                     padding: 10px 0px 10px 10px;
                     color: #fff;
                     text-transform: uppercase;
                     width: 90%;
+                    outline:none;
                 }  
             }
 
             &__radio {
                 padding: 0px;
+                display: block;
+                margin-bottom: 50px;
 
                 li {
                     float: left;
@@ -118,10 +146,11 @@
                 }
 
                 &:after {
+                    color: #ed145b;
                     content: '>';
                     position: absolute;
                     transform: rotate(90deg);
-                    right: 37px;
+                    right: 53px;
                     top: 9px;
                     z-index: -1;
                 }
@@ -155,15 +184,16 @@
                 border: 1px solid #ed145b;
                 color: #000;
                 cursor: pointer;
-                font: 11px/11px Gotham HTF Medium;
+                font-family: 'Gotham-Medium';
+                font-size: 11px;
                 letter-spacing: 2px;
-                padding: 13px 27px;
+                padding: 12px 50px;
                 text-transform: uppercase;
                 transition: background .4s ease,color .4s ease;
                 white-space: nowrap;
 
                 &:hover {
-                    background: #000;
+                    background: transparent;
                     color: #ed145b;
                 }                
             }

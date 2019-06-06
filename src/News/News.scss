@@ -1,12 +1,26 @@
 .news {   
+    background: url('/public/images/news-bg.png') top no-repeat;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    position: relative;
 
     h1 {
         &.title_main {
             margin-bottom: 160px;
+
+            @media (max-width: 1024px) {
+                margin-bottom: 70px;
+            }
         }
     }
 
     &__list {
+        @media screen and (max-width: 610px) {
+            width: 80%;
+            margin: 0 auto;
+        }
 
         &:hover {
             .news__list-img {
@@ -20,7 +34,7 @@
             display: inline-block;
             padding: 0 14px;
             vertical-align: top;
-            width: 30.33%;
+            width: 30%;
             margin-bottom: 30px;
 
             .news__list-img {
@@ -41,9 +55,7 @@
                     -webkit-filter: none;
                     filter: none
                 }
-            }
-
-            
+            }            
 
             h2 {
                 font-size: 18px;
@@ -53,6 +65,11 @@
                 font-family: "Gotham-Medium";
                 font-weight: 500;
                 text-transform: uppercase;
+
+                @media (max-width: 1024px) {
+                    font-size: 15px;
+                    line-height: 23px;
+                }
             }
 
             strong {
@@ -68,6 +85,11 @@
                 position: relative;
                 margin-bottom: 25px;
 
+                @media (max-width: 1024px) {
+                    font-size: 13px;
+                    padding: 18px 0;
+                }
+
                 &:after {
                     background-color: #ed145b;
                     content: '';
@@ -80,7 +102,6 @@
             }
 
             p {
-                width: 354px;
                 font-size: 13px;
                 letter-spacing: 1px;
                 line-height: 23px;
@@ -128,6 +149,14 @@
                         top: 5px;                
                     }
                 }
+            }
+
+            @media (max-width: 1024px) {
+                width: 45%;
+            }
+
+            @media screen and (max-width: 610px) {
+                width: 80%;
             }
         }
     }

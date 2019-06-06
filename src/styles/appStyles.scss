@@ -71,6 +71,10 @@ body {
                 transform: translateY(-50%);
                 width: 13px;
             }
+
+            @media (max-width: 1024px) {
+                font-size: 43px;
+            }
         }
     }
 }

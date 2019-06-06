@@ -3,7 +3,7 @@ import React from 'react'
 import './styles/appStyles.scss'
 
 import Header from './Header/Header'
-import Nba from './Nba/Nba'
+import Mba from './Mba/Mba'
 import Concept from './Concept/Concept'
 import Photos from './Photos/Photos'
 import News from './News/News'
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Nba />
+      <Mba />
       <Concept />
       <Photos />
       <News />

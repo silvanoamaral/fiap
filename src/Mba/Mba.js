@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 
-import './Nba.scss'
+import './Mba.scss'
 
-class Nba extends Component {
+class Mba extends Component {
 
     render() {
         
         return (
-            <section className="nba">        
+            <section className="mba">        
                <div className="content">
-                    <h1 class="nba__title">NBA</h1>
-                    <span>FIAP</span>
+                    <h1 class="mba__title">MBA</h1>
+                    <span className="title_fiap">FIAP</span>
                     <p>PENSE O NOVO EM UM DOS NOSSOS 30 MBAS NAS ÁREAS DE TECNOLOGIA, INOVAÇÃO E NEGÓCIOS.</p>
                </div>
             </section>
@@ -18,4 +18,4 @@ class Nba extends Component {
     }
 }
 
-export default Nba
+export default Mba
