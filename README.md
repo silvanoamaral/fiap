@@ -41,7 +41,10 @@
 │   └── index.css
 │   └── index.js
 │   └── serviceWorkes.js
+├── .babelrc
 ├── webpack.config.js
+├── webpack.dev.config.js
+├── webpack.prod.config.js
 ├── package.json
 ```
 
