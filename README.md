@@ -51,8 +51,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### `Installation of the project`
 
-* Copy the repository in your machine: https://github.com/silvanoamaral/mercado-livre.git;
-* Access the folder `cd mercado-livre`;
+* Copy the repository in your machine: https://github.com/silvanoamaral/fiap.git;
+* Access the folder `cd fiap`;
 * Install the dependencies in the project, use command `npm install`.
 
 ### `Available Scripts`
@@ -62,4 +62,4 @@ In the project directory, you can run:
 ### `npm run dev`
 
 Runs the app in the development mode.<br>
-Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
+Open [http://localhost:8080](http://localhost:8080) to view it in the browser.

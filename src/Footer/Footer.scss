@@ -24,15 +24,12 @@
 
     &__logo {
         margin-bottom: 40px;
-
-        &-icon {
-            fill: $themaColor-Magenta;
-            height: 28px;
-            stroke: $themaColor-Magenta;
-            -webkit-transition: fill .4s,stroke .4s;
-            transition: fill .4s,stroke .4s;
-            width: 100px;
-        }        
+        fill: $themaColor-Magenta;
+        height: 28px;
+        stroke: $themaColor-Magenta;
+        -webkit-transition: fill .4s,stroke .4s;
+        transition: fill .4s,stroke .4s;
+        width: 100px;
     }
 
     &__columns {
