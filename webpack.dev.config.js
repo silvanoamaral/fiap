@@ -2,6 +2,7 @@ var path    = require('path')
 var HtmlWebpackPlugin     = require('html-webpack-plugin')
 
 module.exports = {
+  devtool: 'source-map',
   entry: path.join(__dirname, '/src/index.js'),
   output: {
     filename: 'bundle.js',
@@ -23,7 +24,7 @@ module.exports = {
   },
   plugins:[
     new HtmlWebpackPlugin ({
-      template:path.join(__dirname, '/public/index.html')
+      template:path.join(__dirname, '/src/public/index.html')
     })
   ]
 }
