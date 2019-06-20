@@ -1,11 +1,16 @@
 # fiap
 
+## Live demo
+
+Project FIAP Go [here](https://fiap-project.herokuapp.com/)
+
 ## Developed With
 
 * React
 * HTML
 * CSS / SASS / BEM
 * Javascript / ES6
+* Babel
 * Node.js
 * Webpack
 
