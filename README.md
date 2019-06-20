@@ -16,41 +16,48 @@ Project FIAP Go [here](https://fiap-project.herokuapp.com/)
 
 ## Project Structure
 ```
-├── public
-├── src
-│   ├── Concept
-│   │   └── Concept.js
-│   │   └── Concept.scss
-│   ├── Contact
-│   │   └── Contact.js
-│   │   └── Contact.scss
-│   ├── Footer
-│   │   └── Footer.js
-│   │   └── Footer.scss
-│   ├── Header
-│   │   └── Header.js
-│   │   └── Header.scss
-│   ├── MBA
-│   │   └── MBA.js
-│   │   └── MBA.scss
-│   ├── News
-│   │   └── News.js
-│   │   └── News.scss
-│   ├── Photos
-│   │   └── Photos.js
-│   │   └── Photos.scss
-│   ├── Styles
-│   │   └── appStyles.scss
-│   │   └── variables.scss
-│   └── App.js
-│   └── index.css
-│   └── index.js
-│   └── serviceWorkes.js
-├── .babelrc
-├── webpack.config.js
-├── webpack.dev.config.js
-├── webpack.prod.config.js
+├── client
+│   ├── public
+│   │   ├── fonts
+│   │   ├── images
+│   ├── src
+│   │   ├── Concept
+│   │   │   └── Concept.js
+│   │   │   └── Concept.scss
+│   │   ├── Contact
+│   │   │   └── Contact.js
+│   │   │   └── Contact.scss
+│   │   ├── Footer
+│   │   │   └── Footer.js
+│   │   │   └── Footer.scss
+│   │   ├── Header
+│   │   │   └── Header.js
+│   │   │   └── Header.scss
+│   │   ├── MBA
+│   │   │   └── MBA.js
+│   │   │   └── MBA.scss
+│   │   ├── News
+│   │   │   └── News.js
+│   │   │   └── News.scss
+│   │   ├── Photos
+│   │   │   └── Photos.js
+│   │   │   └── Photos.scss
+│   │   ├── Styles
+│   │   │   └── appStyles.scss
+│   │   │   └── variables.scss
+│   │   └── App.js
+│   │   └── index.css
+│   │   └── index.js
+│   │   └── logo.svg
+│   ├── .babelrc
+│   ├── webpack.common.js
+│   ├── webpack.dev.js
+│   ├── webpack.prod.js
+│   ├── package.json
+├── gitgnore
 ├── package.json
+├── README.md
+├── server.js
 ```
 
 ## Getting Started
